@@ -1,0 +1,166 @@
+@font-face {
+  font-family: google;
+  src: url(fonts/VollkornSC-Bold.ttf) format('truetype');
+}
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.elementToFadeInAndOut {
+    opacity: 1;
+    animation: fade 1s linear;
+}
+@keyframes fadeOut {
+  0% { opacity: 1}
+  100% { opacity: 0 }
+}
+
+.elementToFadeOut {
+    opacity: 0;
+    animation: fadeOut 1s linear;
+}
+
+body {
+  font-family: google;
+  background: url("images/wood2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px #888888;
+  color: black;
+  font-size: 50px;
+  background-image: url("images/title2.png");
+  box-shadow: 5px 10px 8px #888888;
+  margin-top: -5px;
+}
+
+.watch {
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 33px;
+}
+
+#timezone {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.form-area {
+  box-sizing: border-box;
+  width: 60%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-height: 560px;
+}
+
+.text-area {
+  max-height: 100px;
+  width: 90%;
+  margin-left: 20px;
+}
+
+.date-area {
+  width: 90%;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.time-area {
+  width: 90%;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.head {
+  color: yellow;
+}
+
+#nosubmit {
+  background-image: url("images/formback.jpg");
+  background-size: cover;
+  height: 370px;
+  box-sizing: border-box;
+}
+
+.submitarea {
+  color: yellow;
+  width: 90%;
+  margin-left: 20px;
+}
+
+#deleteALL{
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: 30px;
+
+}
+
+.eror {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.notes-container {
+  margin-left: 0.2px;
+  margin-top: 40px;
+}
+
+.box {
+  box-sizing: border-box;
+  background-image: url(images/note.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 200px;
+  padding: 25px 15px 68px 23px;
+  word-break: break-all;
+  max-width: 250px;
+}
+
+.box p.text {
+  overflow-y: auto;
+  max-height: 113px;
+  max-width: 155px;
+}
+
+.paradate {
+  color: red;
+  position: absolute;
+  left: 17px;
+  bottom: 10px;
+}
+
+.paratime {
+  color: blue;
+  position: absolute;
+  bottom: -7px;
+}
+
+.glyphicon {
+  position: absolute;
+  left: 176px;
+  top: -2px;
+  display: none;
+}
+
+.box:hover .glyphicon {  /*when i hover on box do things to the glyphicon*/
+  display: block;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+.box:hover{
+
+transform: scale(1.15, 1.15);
+
+}
